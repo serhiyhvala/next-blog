@@ -1,0 +1,37 @@
+.nav {
+  height: var(--nav-height);
+  @apply bg-light-gray-2
+}
+
+.container {
+  @apply max-w-container p-[20px] m-auto;
+  @apply flex justify-between gap-[15px] items-center flex-wrap
+}
+
+.logo_desc {
+  @apply text-blue
+}
+
+.logo_title {
+  @apply text-logo text-dark-blue;
+}
+
+.links {
+  @apply flex gap-[10px];
+  li {
+    @apply hover:text-blue
+  }
+}
+
+.active {
+  @apply text-blue
+}
+
+@media screen and (max-width: 500px){
+  .nav {
+    height: 120px;
+  }
+  .container {
+    @apply flex-col items-center
+  }
+}
