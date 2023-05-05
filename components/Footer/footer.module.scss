@@ -1,0 +1,21 @@
+.footer {
+  height: var(--footer-height);
+  @apply bg-light-gray-2
+}
+
+.container {
+  @apply max-w-container px-[20px] py-[25px] m-auto flex justify-between items-start
+}
+
+.icons {
+  @apply flex gap-[20px]
+}
+
+@media screen and (max-width: 400px){
+  .text {
+    @apply hidden;
+  }
+  .container {
+    @apply justify-center
+  }
+}
