@@ -3,17 +3,18 @@ import Navbar from "../Navbar";
 import {FC, ReactNode} from "react";
 import styles from './layout.module.scss'
 import Footer from "@components/Footer";
+import {concatTitle} from "@utils/concatTitle";
 
 type LayoutProps = {
     children: ReactNode
-    title?: string
+    title: string
 }
 
-const Layout: FC<LayoutProps> = ({children, title = 'My Blog Page'}) => {
+const Layout: FC<LayoutProps> = ({children, title}) => {
     return (
         <>
             <Head>
-                <title>{title}</title>
+                <title>{concatTitle(title)}</title>
             </Head>
             <Navbar/>
             <div className={styles.wrapper}>
@@ -21,7 +22,7 @@ const Layout: FC<LayoutProps> = ({children, title = 'My Blog Page'}) => {
                     {children}
                 </div>
             </div>
-            <Footer />
+            <Footer/>
         </>
     );
 };

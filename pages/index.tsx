@@ -10,7 +10,7 @@ import Button from "@ui/Button";
 
 export default function Home() {
     return (
-        <Layout>
+        <Layout title='Home'>
             <div className={styles.wrapper}>
                 <div className={styles.top}>
                     <div className={styles.left}>
