@@ -20,7 +20,8 @@
       "@utils/*": ["./utils/*"],
       "@ui/*": ["./ui/*"],
       "@type/*": ["./type/*"],
-      "@constants/*": ["./constants/*"]
+      "@constants/*": ["./constants/*"],
+      "@assets/*": ["./assets/*"]
     }
   },
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
