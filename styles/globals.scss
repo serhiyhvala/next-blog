@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root {
+  --nav-height: 86px;
+  --footer-height: 86px;
+  --wrapper-heigth: calc(100vh - var(--nav-height) - var(--footer-height));
+}
