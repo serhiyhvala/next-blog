@@ -1,0 +1,14 @@
+.error{
+  min-height: var(--wrapper-heigth);
+  @apply flex flex-col gap-[30px] items-center justify-center text-center
+}
+
+.text{
+  @apply flex gap-[20px] flex-col;
+  h2 {
+    @apply text-sub-heading1;
+  }
+  p {
+    @apply text-paragraph2
+  }
+}
