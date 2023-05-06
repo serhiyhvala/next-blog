@@ -1,17 +1,19 @@
 import {FC, ReactNode} from "react";
 import styles from './button.module.scss'
+import Link from "next/link";
+
 type ButtonProps = {
     slug: string
     children: ReactNode
 }
 
-const Button :FC<ButtonProps>= ({slug, children}) => {
+const Button: FC<ButtonProps> = ({slug, children}) => {
     return (
-        <a href={slug}>
+        <Link href={slug}>
             <button className={styles.button}>
                 {children}
             </button>
-        </a>
+        </Link>
     );
 };
 
