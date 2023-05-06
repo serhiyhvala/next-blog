@@ -1,8 +1,11 @@
 import styles from './navbar.module.scss'
 import Link from "next/link";
 import NavbarData from "@constants/navbar.data";
+import {useRouter} from 'next/router'
 
 const Navbar = () => {
+    const {pathname} = useRouter()
+    console.log(pathname)
     return (
         <nav className={styles.nav}>
             <div className={styles.container}>
@@ -17,7 +20,7 @@ const Navbar = () => {
                         {
                             NavbarData.map(item => {
                                 return (
-                                    <li key={item.id}>
+                                    <li key={item.id} className={pathname === item.slug ? styles.active : ''}>
                                         <Link href={item.slug}>{item.title}</Link>
                                     </li>
                                 )
