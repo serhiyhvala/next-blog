@@ -1,0 +1,45 @@
+.wrapper {
+  min-height: var(--wrapper-heigth);
+}
+
+.projects {
+  @apply flex justify-center flex-wrap gap-[15px] py-[15px]
+}
+
+.card {
+  @apply max-w-[400px] flex flex-col justify-between bg-white drop-shadow-lg rounded
+}
+
+.text {
+  @apply p-[20px] flex flex-col gap-[15px]
+}
+
+.title {
+  @apply text-sub-heading1
+}
+
+.links {
+  @apply p-[15px] flex flex-wrap gap-[15px]
+}
+
+.link {
+  @apply text-white px-[10px] py-[5px] rounded bg-blue hover:bg-dark-blue
+}
+
+.img {
+  @apply rounded-t
+}
+
+.tagsContainer {
+  @apply bg-dark-gray rounded-b
+}
+
+.tags {
+  @apply px-[20px] py-[15px] flex gap-[10px] flex-wrap text-white
+}
+
+@media screen and (max-width: 855px){
+  .projects {
+    @apply justify-center
+  }
+}
