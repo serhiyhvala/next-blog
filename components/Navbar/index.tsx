@@ -18,7 +18,7 @@ const Navbar = () => {
                             NavbarData.map(item => {
                                 return (
                                     <li key={item.id}>
-                                        <a href={item.slug}>{item.title}</a>
+                                        <Link href={item.slug}>{item.title}</Link>
                                     </li>
                                 )
                             })
