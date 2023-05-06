@@ -7,7 +7,6 @@ import {urlFor} from "@config/urlImageFor";
 
 const Projects = () => {
     const {data} = useQuery(['getProjects'], blogServices.getProjects)
-    console.log(data)
     return (
         <Layout title='My projects'>
             <div className={styles.wrapper}>

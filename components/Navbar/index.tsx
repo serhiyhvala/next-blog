@@ -5,7 +5,6 @@ import {useRouter} from 'next/router'
 
 const Navbar = () => {
     const {pathname} = useRouter()
-    console.log(pathname)
     return (
         <nav className={styles.nav}>
             <div className={styles.container}>
