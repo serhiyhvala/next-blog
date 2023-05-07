@@ -35,7 +35,11 @@
 }
 
 .tags {
-  @apply px-[20px] py-[15px] flex gap-[10px] flex-wrap text-white
+  @apply px-[20px] py-[15px] flex gap-[5px] flex-wrap text-white
+}
+
+.tagItem {
+  @apply hover:text-black cursor-pointer hover:bg-white p-[5px] rounded
 }
 
 @media screen and (max-width: 855px){
