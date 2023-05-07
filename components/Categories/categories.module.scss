@@ -1,0 +1,11 @@
+.list {
+  @apply flex gap-[5px] items-center justify-center my-[10px]
+}
+
+.item {
+  @apply cursor-pointer hover:text-white p-[5px] hover:bg-black rounded
+}
+
+.active {
+  @apply bg-black rounded text-white
+}
