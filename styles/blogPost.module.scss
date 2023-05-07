@@ -1,6 +1,6 @@
 .wrapper {
   min-height: var(--wrapper-heigth);
-  @apply flex items-center flex-col gap-[50px] pb-[30px];
+  @apply flex items-center flex-col gap-[50px] py-[30px];
 }
 
 .post {
