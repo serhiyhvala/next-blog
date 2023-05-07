@@ -1,3 +1,16 @@
+export interface AboutMe {
+    aboutImage: AboutImage[],
+    _id: string
+    aboutTitle: string
+}
+
+export interface AboutImage {
+    aboutImageTitle: string
+    _key: string
+    asset: Asset
+    _type: string
+}
+
 export interface Project {
     preview: string
     github: string
