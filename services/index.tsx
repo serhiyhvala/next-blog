@@ -1,5 +1,5 @@
 import {client} from "@config/sanityClient";
-import {AboutMe, Category, Project} from "@type/sanityTypes";
+import {AboutMe, BlogItem, Category, Project} from "@type/sanityTypes";
 
 export const blogServices = {
     async getCategories() {
@@ -10,5 +10,8 @@ export const blogServices = {
     },
     async getAbout() {
         return await client.fetch(`*[_type=='about'] | order(_createdAt asc)`) as AboutMe[]
+    },
+    async getPosts(){
+        return await client.fetch(`*[_type == 'post']`) as BlogItem[]
     }
 }

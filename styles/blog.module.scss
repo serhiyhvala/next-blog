@@ -1,0 +1,35 @@
+.wrapper {
+  min-height: var(--wrapper-heigth);
+  @apply flex items-center flex-col gap-[50px] py-[30px];
+}
+
+.title {
+  @apply text-heading2
+}
+
+.posts {
+  @apply flex flex-wrap gap-[15px]
+}
+
+.post {
+  @apply bg-white max-w-[300px] rounded-xl shadow-xl hover:bg-blue hover:text-white;
+  &:hover {
+    .img {
+      @apply bg-white
+    }
+  }
+}
+
+.img {
+  @apply max-w-[220px] rounded-t-xl
+}
+
+.text {
+  @apply m-[10px]
+}
+
+@media screen and (max-width: 670px){
+  .posts {
+    @apply justify-center
+  }
+}
