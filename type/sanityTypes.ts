@@ -1,3 +1,36 @@
+export interface BlogItem {
+    _rev: string
+    _type: string
+    _id: string
+    title: string
+    slug: Slug
+    _updatedAt: string
+    _createdAt: string
+    mainImage: MainImage
+    body: Body[]
+}
+
+export interface Body {
+    _key: string
+    _type: string
+    children: Children[]
+    markDefs: any[]
+    style: string
+}
+
+export interface Children {
+    _key: string
+    _type: string
+    marks: string[]
+    text: string
+}
+
+
+export interface Slug {
+    current: string
+    _type: string
+}
+
 export interface AboutMe {
     aboutImage: AboutImage[],
     _id: string
