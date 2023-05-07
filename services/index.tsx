@@ -3,7 +3,7 @@ import {AboutMe, Category, Project} from "@type/sanityTypes";
 
 export const blogServices = {
     async getCategories() {
-        return await client.fetch((`*[_type=='category'] {_id, title}`)) as Category[]
+        return await client.fetch((`*[_type=='category'] | order(_createdAt desc)`)) as Category[]
     },
     async getProjects() {
         return await client.fetch(`*[_type=='project'] {mainImage, description, _id, title, preview, github, categories[]->}`) as Project[]
