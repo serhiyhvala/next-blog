@@ -7,3 +7,7 @@
   --footer-height: 86px;
   --wrapper-heigth: calc(100vh - var(--nav-height) - var(--footer-height));
 }
+
+*{
+  -webkit-tap-highlight-color: transparent;
+}
