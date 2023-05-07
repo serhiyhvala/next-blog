@@ -32,7 +32,7 @@ const AboutMe = () => {
                         <>
                             <h2 className={styles.title}>{aboutTitle}</h2>
                             <div className={styles.cardContainer}>
-                                {aboutImage.map(({aboutImageTitle, aboutImageDesc, asset, _key}) => (
+                                {aboutImage.map(({aboutImageTitle, asset, _key}) => (
                                     <div className={styles.card} key={_key}>
                                         <Image src={urlFor(asset).url()} alt={aboutImageTitle} width={200}
                                                height={200}/>
