@@ -16,7 +16,7 @@ const Footer = () => {
                         ))
                     }
                 </div>
-                <div className={styles.text}>Sergiy Hvala | 2023</div>
+                <div className={styles.text}>Sergiy Hvala | {new Date().getFullYear()}</div>
             </div>
         </footer>
     );
