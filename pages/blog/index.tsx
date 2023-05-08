@@ -6,6 +6,7 @@ import {urlFor} from "@config/urlImageFor";
 import Image from "next/image";
 import Link from "next/link";
 import {convertDateToString} from "@utils/convertDateToString";
+import Loader from "@components/Loader";
 
 const Blog = () => {
     const {data, isLoading} = useQuery(['getPosts'], blogServices.getPosts)
@@ -13,7 +14,8 @@ const Blog = () => {
         <Layout title='Blog'>
             <div className={styles.wrapper}>
                 <h2 className={styles.title}>My Blog</h2>
-                <div className={styles.posts}>
+                {isLoading ? <Loader /> : (
+                    <div className={styles.posts}>
                     {
                         data?.map(({mainImage, title, slug, _createdAt, _id}) => (
                             <Link href={`/blog/${slug.current}`} className={styles.post} key={_id}>
@@ -32,6 +34,7 @@ const Blog = () => {
                         ))
                     }
                 </div>
+                )}
             </div>
         </Layout>
     );
