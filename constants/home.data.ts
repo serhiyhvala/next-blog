@@ -15,7 +15,7 @@ export const HeroData: THome[] = [
     },
     {
         title: 'Github',
-        link: 'https://github.com/serhiyhvala',
+        link: 'https://github.com/serhiyhvala/next-blog',
         icon: 'BsGithub',
         id: uuid()
     },
